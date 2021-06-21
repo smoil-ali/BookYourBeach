@@ -1,0 +1,195 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGBUS (0xa) at pc=0x000000011127ab6b, pid=1438, tid=0x0000000000005803
+#
+# JRE version: OpenJDK Runtime Environment (8.0_242) (build 1.8.0_242-release-1644-b3-6915495)
+# Java VM: OpenJDK 64-Bit Server VM (25.242-b3-6915495 mixed mode bsd-amd64 compressed oops)
+# Problematic frame:
+# 
+[error occurred during error reporting (printing problematic frame), id 0xa]
+
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f8f57b1d800):  JavaThread "Handler for socket connection from /127.0.0.1:49571 to /127.0.0.1:49572" [_thread_in_native, id=22531, stack(0x0000700009d8c000,0x0000700009e8c000)]
+
+siginfo: si_signo: 10 (SIGBUS), si_code: 2 (BUS_ADRERR), si_addr: 0x000000011127ab6b
+
+Registers:
+RAX=0x0000000000000001, RBX=0x0000000111cf7d70, RCX=0x00007fff20415c4a, RDX=0x0000000000000000
+RSP=0x0000700009e8b080, RBP=0x0000700009e8b0b0, RSI=0x0000000000000000, RDI=0x00000000000000ea
+R8 =0x0000000000000080, R9 =0x0000000000000000, R10=0x00007f8f57075000, R11=0x0000000000000246
+R12=0x0000000000000000, R13=0x0000000111cf7d70, R14=0x00007f8f57b1d9e0, R15=0x0000000000000000
+RIP=0x000000011127ab6b, EFLAGS=0x0000000000010246, ERR=0x0000000000000014
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x0000700009e8b080)
+0x0000700009e8b080:   00000001108a99b5 0000700009e8b0e0
+0x0000700009e8b090:   0000000000000000 0000000111cf7d70
+0x0000700009e8b0a0:   0000700009e8b190 00007f8f57b1d800
+0x0000700009e8b0b0:   0000700009e8b140 0000000117018407
+0x0000700009e8b0c0:   0000700009e8b108 0000000110c16d40
+0x0000700009e8b0d0:   0000000000000000 0000000110c15198
+0x0000700009e8b0e0:   0000000000000000 0000700009e8b108
+0x0000700009e8b0f0:   0000700009e8b160 0000000117007d80
+0x0000700009e8b100:   0000700009e8b100 0000000111cf7d70
+0x0000700009e8b110:   0000700009e8b190 0000000111cf7f58
+0x0000700009e8b120:   0000000000000000 0000000111cf7d70
+0x0000700009e8b130:   0000000000000000 0000700009e8b160
+0x0000700009e8b140:   0000700009e8b1d8 0000000117007a40
+0x0000700009e8b150:   0000000000000000 0000000117011a56
+0x0000700009e8b160:   ffffffffffffffff 0000000117007ffd
+0x0000700009e8b170:   0000000000000080 00007f8f57075000
+0x0000700009e8b180:   0000000000000000 00000000000000ea
+0x0000700009e8b190:   00000007401a52b0 0000700009e8b198
+0x0000700009e8b1a0:   0000000111cf7a79 0000700009e8b200
+0x0000700009e8b1b0:   0000000111cf7f58 0000000000000000
+0x0000700009e8b1c0:   0000000111cf7a88 0000700009e8b160
+0x0000700009e8b1d0:   0000700009e8b1f0 0000700009e8b248
+0x0000700009e8b1e0:   0000000117007a40 0000000000000000
+0x0000700009e8b1f0:   ffffffffffffffff 00000007966e1420
+0x0000700009e8b200:   00000007401a52b0 0000700009e8b208
+0x0000700009e8b210:   0000000111cef5be 0000700009e8b278
+0x0000700009e8b220:   0000000111cf2260 0000000000000000
+0x0000700009e8b230:   0000000111cef608 0000700009e8b1f0
+0x0000700009e8b240:   0000700009e8b268 0000700009e8b2f0
+0x0000700009e8b250:   0000000117007a40 0000000000000000
+0x0000700009e8b260:   0000000000000000 ffffffffffffffff
+0x0000700009e8b270:   0000000111cf1800 00000007401a5080 
+
+Instructions: (pc=0x000000011127ab6b)
+0x000000011127ab4b:   
+[error occurred during error reporting (printing registers, top of stack, instructions near pc), id 0xa]
+
+Register to memory mapping:
+
+RAX=0x0000000000000001 is an unknown value
+RBX={method} {0x0000000111cf7d70} 'kevent0' '(IJIJ)I' in 'sun/nio/ch/KQueueArrayWrapper'
+RCX=0x00007fff20415c4a: kevent+0xa in /usr/lib/system/libsystem_kernel.dylib at 0x00007fff20410000
+RDX=0x0000000000000000 is an unknown value
+RSP=0x0000700009e8b080 is pointing into the stack for thread: 0x00007f8f57b1d800
+RBP=0x0000700009e8b0b0 is pointing into the stack for thread: 0x00007f8f57b1d800
+RSI=0x0000000000000000 is an unknown value
+RDI=0x00000000000000ea is an unknown value
+R8 =0x0000000000000080 is an unknown value
+R9 =0x0000000000000000 is an unknown value
+R10=0x00007f8f57075000 is an unknown value
+R11=0x0000000000000246 is an unknown value
+R12=0x0000000000000000 is an unknown value
+R13={method} {0x0000000111cf7d70} 'kevent0' '(IJIJ)I' in 'sun/nio/ch/KQueueArrayWrapper'
+R14=0x00007f8f57b1d9e0 is an unknown value
+R15=0x0000000000000000 is an unknown value
+
+
+Stack: [0x0000700009d8c000,0x0000700009e8c000],  sp=0x0000700009e8b080,  free space=1020k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+[error occurred during error reporting (printing native stack), id 0xa]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  sun.nio.ch.KQueueArrayWrapper.kevent0(IJIJ)I+0
+j  sun.nio.ch.KQueueArrayWrapper.poll(J)I+17
+j  sun.nio.ch.KQueueSelectorImpl.doSelect(J)I+30
+j  sun.nio.ch.SelectorImpl.lockAndDoSelect(J)I+37
+j  sun.nio.ch.SelectorImpl.select(J)I+30
+j  sun.nio.ch.SelectorImpl.select()I+2
+j  org.gradle.internal.remote.internal.inet.SocketConnection$SocketInputStream.read([BII)I+20
+J 1172 C1 com.esotericsoftware.kryo.io.Input.require(I)I (220 bytes) @ 0x000000011742157c [0x0000000117421040+0x53c]
+j  com.esotericsoftware.kryo.io.Input.readVarInt(Z)I+2
+j  com.esotericsoftware.kryo.io.Input.readInt(Z)I+2
+j  org.gradle.internal.serialize.kryo.KryoBackedDecoder.readSmallInt()I+5
+j  org.gradle.internal.serialize.DefaultSerializerRegistry$TaggedTypeSerializer.read(Lorg/gradle/internal/serialize/Decoder;)Ljava/lang/Object;+1
+j  org.gradle.internal.serialize.Serializers$StatefulSerializerAdapter$1.read()Ljava/lang/Object;+11
+j  org.gradle.internal.remote.internal.inet.SocketConnection.receive()Ljava/lang/Object;+4
+j  org.gradle.launcher.daemon.server.SynchronizedDispatchConnection.receive()Ljava/lang/Object;+4
+j  org.gradle.launcher.daemon.server.DefaultDaemonConnection$1.run()V+6
+j  org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(Ljava/lang/Runnable;)V+1
+j  org.gradle.internal.concurrent.ManagedExecutorImpl$1.run()V+25
+j  java.util.concurrent.ThreadPoolExecutor.runWorker(Ljava/util/concurrent/ThreadPoolExecutor$Worker;)V+95
+j  java.util.concurrent.ThreadPoolExecutor$Worker.run()V+5
+j  org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run()V+7
+j  java.lang.Thread.run()V+11
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00007f8f581f4800 JavaThread "jar transforms Thread 94" [_thread_blocked, id=65539, stack(0x00007000112e8000,0x00007000113e8000)]
+  0x00007f8f56108000 JavaThread "jar transforms Thread 93" [_thread_blocked, id=65795, stack(0x00007000111e5000,0x00007000112e5000)]
+  0x00007f8f56107800 JavaThread "jar transforms Thread 92" [_thread_blocked, id=66307, stack(0x00007000110e2000,0x00007000111e2000)]
+  0x00007f8f58caf800 JavaThread "jar transforms Thread 91" [_thread_blocked, id=61187, stack(0x0000700010fdf000,0x00007000110df000)]
+  0x00007f8f56106800 JavaThread "jar transforms Thread 90" [_thread_blocked, id=67075, stack(0x0000700010edc000,0x0000700010fdc000)]
+  0x00007f8f58cae800 JavaThread "jar transforms Thread 89" [_thread_blocked, id=60931, stack(0x0000700010dd9000,0x0000700010ed9000)]
+  0x00007f8f592bc800 JavaThread "jar transforms Thread 88" [_thread_blocked, id=60419, stack(0x0000700010cd6000,0x0000700010dd6000)]
+  0x00007f8f58cae000 JavaThread "jar transforms Thread 87" [_thread_blocked, id=59907, stack(0x0000700010bd3000,0x0000700010cd3000)]
+  0x00007f8f55a5a000 JavaThread "jar transforms Thread 86" [_thread_blocked, id=67843, stack(0x0000700010ad0000,0x0000700010bd0000)]
+  0x00007f8f55a59000 JavaThread "jar transforms Thread 85" [_thread_blocked, id=68099, stack(0x00007000109cd000,0x0000700010acd000)]
+  0x00007f8f56106000 JavaThread "jar transforms Thread 84" [_thread_blocked, id=59139, stack(0x00007000108ca000,0x00007000109ca000)]
+  0x00007f8f5ba28000 JavaThread "jar transforms Thread 83" [_thread_blocked, id=68611, stack(0x00007000107c7000,0x00007000108c7000)]
+  0x00007f8f57224000 JavaThread "jar transforms Thread 82" [_thread_blocked, id=58627, stack(0x00007000106c4000,0x00007000107c4000)]
+  0x00007f8f56105000 JavaThread "jar transforms Thread 81" [_thread_blocked, id=68867, stack(0x00007000105c1000,0x00007000106c1000)]
+  0x00007f8f56104800 JavaThread "jar transforms Thread 80" [_thread_blocked, id=69123, stack(0x00007000104be000,0x00007000105be000)]
+  0x00007f8f592bb800 JavaThread "jar transforms Thread 79" [_thread_blocked, id=69635, stack(0x00007000103bb000,0x00007000104bb000)]
+  0x00007f8f592bb000 JavaThread "jar transforms Thread 78" [_thread_blocked, id=57603, stack(0x00007000102b8000,0x00007000103b8000)]
+  0x00007f8f592ba000 JavaThread "jar transforms Thread 77" [_thread_blocked, id=70147, stack(0x00007000101b5000,0x00007000102b5000)]
+  0x00007f8f592b9800 JavaThread "jar transforms Thread 76" [_thread_blocked, id=57091, stack(0x00007000100b2000,0x00007000101b2000)]
+  0x00007f8f592b8800 JavaThread "jar transforms Thread 75" [_thread_blocked, id=70659, stack(0x000070000ffaf000,0x00007000100af000)]
+  0x00007f8f56144800 JavaThread "jar transforms Thread 74" [_thread_blocked, id=56579, stack(0x000070000feac000,0x000070000ffac000)]
+  0x00007f8f56144000 JavaThread "jar transforms Thread 73" [_thread_blocked, id=71171, stack(0x000070000fda9000,0x000070000fea9000)]
+  0x00007f8f58caa800 JavaThread "jar transforms Thread 72" [_thread_blocked, id=56067, stack(0x000070000fca6000,0x000070000fda6000)]
+  0x00007f8f56143000 JavaThread "jar transforms Thread 71" [_thread_blocked, id=71683, stack(0x000070000fba3000,0x000070000fca3000)]
+  0x00007f8f56142800 JavaThread "jar transforms Thread 70" [_thread_blocked, id=55555, stack(0x000070000faa0000,0x000070000fba0000)]
+  0x00007f8f56141800 JavaThread "jar transforms Thread 69" [_thread_blocked, id=55043, stack(0x000070000f99d000,0x000070000fa9d000)]
+  0x00007f8f56141000 JavaThread "jar transforms Thread 68" [_thread_blocked, id=72195, stack(0x000070000f89a000,0x000070000f99a000)]
+  0x00007f8f56140000 JavaThread "jar transforms Thread 67" [_thread_blocked, id=72451, stack(0x000070000f797000,0x000070000f897000)]
+  0x00007f8f55a75000 JavaThread "jar transforms Thread 66" [_thread_blocked, id=54531, stack(0x000070000f694000,0x000070000f794000)]
+  0x00007f8f55a74800 JavaThread "jar transforms Thread 65" [_thread_blocked, id=54019, stack(0x000070000f591000,0x000070000f691000)]
+  0x00007f8f55a73800 JavaThread "jar transforms Thread 64" [_thread_blocked, id=53763, stack(0x000070000f48e000,0x000070000f58e000)]
+  0x00007f8f5f4b9800 JavaThread "jar transforms Thread 63" [_thread_blocked, id=73475, stack(0x000070000f38b000,0x000070000f48b000)]
+  0x00007f8f55a73000 JavaThread "jar transforms Thread 62" [_thread_blocked, id=73731, stack(0x000070000f288000,0x000070000f388000)]
+  0x00007f8f5f4b9000 JavaThread "jar transforms Thread 61" [_thread_blocked, id=74243, stack(0x000070000f185000,0x000070000f285000)]
+  0x00007f8f5f4b8000 JavaThread "jar transforms Thread 60" [_thread_blocked, id=74755, stack(0x000070000f082000,0x000070000f182000)]
+  0x00007f8f5f4b7800 JavaThread "jar transforms Thread 59" [_thread_blocked, id=75011, stack(0x000070000ef7f000,0x000070000f07f000)]
+  0x00007f8f55a72000 JavaThread "jar transforms Thread 58" [_thread_blocked, id=75523, stack(0x000070000ee7c000,0x000070000ef7c000)]
+  0x00007f8f5f4b6800 JavaThread "jar transforms Thread 57" [_thread_blocked, id=76035, stack(0x000070000ed79000,0x000070000ee79000)]
+  0x00007f8f5f4b6000 JavaThread "jar transforms Thread 56" [_thread_blocked, id=76547, stack(0x000070000ec76000,0x000070000ed76000)]
+  0x00007f8f5f4b5000 JavaThread "jar transforms Thread 55" [_thread_blocked, id=52739, stack(0x000070000eb73000,0x000070000ec73000)]
+  0x00007f8f5f4b4800 JavaThread "jar transforms Thread 54" [_thread_blocked, id=52483, stack(0x000070000ea70000,0x000070000eb70000)]
+  0x00007f8f5f4b3800 JavaThread "jar transforms Thread 53" [_thread_blocked, id=51971, stack(0x000070000e96d000,0x000070000ea6d000)]
+  0x00007f8f5613f800 JavaThread "jar transforms Thread 52" [_thread_blocked, id=77059, stack(0x000070000e86a000,0x000070000e96a000)]
+  0x00007f8f5f4b3000 JavaThread "jar transforms Thread 51" [_thread_blocked, id=51203, stack(0x000070000e767000,0x000070000e867000)]
+  0x00007f8f592b8000 JavaThread "jar transforms Thread 50" [_thread_blocked, id=50691, stack(0x000070000e664000,0x000070000e764000)]
+  0x00007f8f5613e000 JavaThread "jar transforms Thread 49" [_thread_blocked, id=77571, stack(0x000070000e561000,0x000070000e661000)]
+  0x00007f8f5613d800 JavaThread "jar transforms Thread 48" [_thread_blocked, id=78083, stack(0x000070000e45e000,0x000070000e55e000)]
+  0x00007f8f55a71000 JavaThread "jar transforms Thread 47" [_thread_blocked, id=50179, stack(0x000070000e35b000,0x000070000e45b000)]
+  0x00007f8f55a70000 JavaThread "jar transforms Thread 46" [_thread_blocked, id=78339, stack(0x000070000e258000,0x000070000e358000)]
+  0x00007f8f5613c000 JavaThread "jar transforms Thread 45" [_thread_blocked, id=78851, stack(0x000070000e155000,0x000070000e255000)]
+  0x00007f8f5613b800 JavaThread "jar transforms Thread 44" [_thread_blocked, id=79363, stack(0x000070000e052000,0x000070000e152000)]
+  0x00007f8f5613a800 JavaThread "jar transforms Thread 43" [_thread_blocked, id=79619, stack(0x000070000df4f000,0x000070000e04f000)]
+  0x00007f8f5f4b2000 JavaThread "jar transforms Thread 42" [_thread_blocked, id=49411, stack(0x000070000de4c000,0x000070000df4c000)]
+  0x00007f8f5f4b1800 JavaThread "jar transforms Thread 41" [_thread_blocked, id=49155, stack(0x000070000dd49000,0x000070000de49000)]
+  0x00007f8f5f4b0800 JavaThread "jar transforms Thread 40" [_thread_blocked, id=48643, stack(0x000070000dc46000,0x000070000dd46000)]
+  0x00007f8f5f4b0000 JavaThread "jar transforms Thread 39" [_thread_blocked, id=80387, stack(0x000070000db43000,0x000070000dc43000)]
+  0x00007f8f5f4af000 JavaThread "jar transforms Thread 38" [_thread_blocked, id=48131, stack(0x000070000da40000,0x000070000db40000)]
+  0x00007f8f592b7000 JavaThread "jar transforms Thread 37" [_thread_blocked, id=80899, stack(0x000070000d93d000,0x000070000da3d000)]
+  0x00007f8f5f4ae800 JavaThread "jar transforms Thread 36" [_thread_blocked, id=81155, stack(0x000070000d83a000,0x000070000d93a000)]
+  0x00007f8f5613a000 JavaThread "jar transforms Thread 35" [_thread_blocked, id=47107, stack(0x000070000d737000,0x000070000d837000)]
+  0x00007f8f55a6f800 JavaThread "jar transforms Thread 34" [_thread_blocked, id=81667, stack(0x000070000d634000,0x000070000d734000)]
+  0x00007f8f56139000 JavaThread "jar transforms Thread 33" [_thread_blocked, id=81923, stack(0x000070000d531000,0x000070000d631000)]
+  0x00007f8f55a6e800 JavaThread "jar transforms Thread 32" [_thread_blocked, id=46339, stack(0x000070000d42e000,0x000070000d52e000)]
+  0x00007f8f55a6e000 JavaThread "jar transforms Thread 31" [_thread_blocked, id=82435, stack(0x000070000d32b000,0x000070000d42b000)]
+  0x00007f8f56138800 JavaThread "jar transforms Thread 30" [_thread_blocked, id=46083, stack(0x000070000d228000,0x000070000d328000)]
+  0x00007f8f55a6d000 JavaThread "jar transforms Thread 29" [_thread_blocked, id=45827, stack(0x000070000d125000,0x000070000d225000)]
+  0x00007f8f55a6c800 JavaThread "jar transforms Thread 28" [_thread_blocked, id=45571, stack(0x000070000d022000,0x000070000d122000)]
+  0x00007f8f55c0f800 JavaThread "jar transforms Thread 27" [_thread_blocked, id=83715, stack(0x000070000cf1f000,0x000070000d01f000)]
+  0x00007f8f5f4ad000 JavaThread "jar transforms Thread 26" [_thread_blocked, id=45315, stack(0x000070000ce1c000,0x000070000cf1c000)]
+  0x00007f8f592b6800 JavaThread "jar transforms Thread 25" [_thread_blocked, id=84227, stack(0x000070000cd19000,0x000070000ce19000)]
+  0x00007f8f592b5800

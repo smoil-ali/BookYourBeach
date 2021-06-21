@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">BookYourBeach</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Prenotazioni</string>
+    <string name="title_notifications">Notifiche</string>
+    <string name="title_menu">Menu</string>
+
+    <string name="url_home">https://www.bookyourbeach.net/backoffice/home?client=android</string>
+    <string name="url_dashboard">https://www.bookyourbeach.net/backoffice/search?client=android</string>
+    <string name="url_notifications">https://www.bookyourbeach.net/backoffice/notifications?client=android</string>
+    <string name="url_menu">https://www.bookyourbeach.net/backoffice/menu?client=android</string>
+    <string name="title_activity_splash_screen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="copyright">BookYourBeach 2021 &#169;</string>
+
+    <string name="notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="notification_channel_name">Notifiche BYB</string>
+
+</resources>

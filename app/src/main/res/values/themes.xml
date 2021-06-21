@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BookYourBeach_cloud" parent="Theme.MaterialComponents.DayNight.NoActionBar"> <!-- prev: Theme.MaterialComponents.DayNight.DarkActionBar -->
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_byb</item>
+        <item name="colorPrimaryVariant">@color/blue_byb</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Customize your theme here. -->
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/blu_byb_cloud</item>
+        <!-- Navigation bar color. -->
+        <item name="android:navigationBarColor">@color/blue_byb</item>
+    </style>
+
+    <style name="Theme.BookYourBeach_cloud.Fullscreen" parent="Theme.BookYourBeach_cloud">
+        <item name="android:actionBarStyle">
+            @style/Widget.Theme.BookYourBeach_cloud.ActionBar.Fullscreen
+        </item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="ThemeOverlay.BYBCloud.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
+</resources>

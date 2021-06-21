@@ -1,0 +1,91 @@
+{
+  "project_info": {
+    "project_number": "987799812443",
+    "firebase_url": "https://bookyourbeach-1490642082313.firebaseio.com",
+    "project_id": "bookyourbeach-1490642082313",
+    "storage_bucket": "bookyourbeach-1490642082313.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987799812443:android:f5c8281c21a0ebc258027e",
+        "android_client_info": {
+          "package_name": "com.bookyourbeach.byb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987799812443-pmfrgdil6eujvilddc2otg0ofen1g21v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoC-qMHdI3QGjPeWHpfsyielt6lLT5wEI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987799812443-j8sb3ttt5f8qh9vfmviaqmheeb1kul6i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "987799812443-9nqeis6kkahrmbvjd4c8a0jlcf6v3r5o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.BookYourBeach.Cloud"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987799812443:android:33e181786bced60158027e",
+        "android_client_info": {
+          "package_name": "com.ematdigitalmarketing.bookyourbeach"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987799812443-l8psvnhmnok3hq3sru4jgn9n3eku5pqg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ematdigitalmarketing.bookyourbeach",
+            "certificate_hash": "42134a9b9bae1ef68bbbdffdb5ce7e021741451d"
+          }
+        },
+        {
+          "client_id": "987799812443-pmfrgdil6eujvilddc2otg0ofen1g21v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoC-qMHdI3QGjPeWHpfsyielt6lLT5wEI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987799812443-j8sb3ttt5f8qh9vfmviaqmheeb1kul6i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "987799812443-9nqeis6kkahrmbvjd4c8a0jlcf6v3r5o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.BookYourBeach.Cloud"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
